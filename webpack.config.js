@@ -7,9 +7,12 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: 'js/bundle.js'
     },
+    //To reload the page and bundle all js files
     devServer: {
         contentBase: './dist'
     },
+    //copy and put HTML file into dist
+
     plugins: [
         new HtmlWebpackPlugin({
             filename: 'index.html',
@@ -17,6 +20,8 @@ module.exports = {
 
         })
     ],
+
+    //Babel loader to conver ES6 to ES5
     module: {
         rules: [
             {

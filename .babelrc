@@ -1,6 +1,8 @@
+//dotfile
 {
     "presets": [
         [
+            //the environment where targets are going to be
             "env",
             {
                 "targets": {
